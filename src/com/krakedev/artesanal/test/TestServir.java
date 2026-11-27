@@ -20,14 +20,14 @@ public class TestServir {
 		
 		double valor;
 		
-		valor = rubia.servirCerveza(1000, null);
+		valor = rubia.servirCerveza(1000, 0);
 		System.out.println("Valor a pagar: " + valor);
 		
 		System.out.println("--------SERVIR 2000ML--------");
 		
 		double valor2;
 		
-		valor2 = rubia.servirCerveza(2000, null);
+		valor2 = rubia.servirCerveza(2000, 0);
 		System.out.println("Valor a pagar: " + valor2);
 		
 		rubia.imprimir();
@@ -36,7 +36,7 @@ public class TestServir {
 		
 		double valor3;
 		
-		valor3 = rubia.servirCerveza(6000, null);
+		valor3 = rubia.servirCerveza(6000, 0);
 		System.out.println("Valor a pagar: " + valor3);
 		
 		

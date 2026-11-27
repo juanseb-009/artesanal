@@ -18,7 +18,7 @@ public class testServirCervezaAI {
 
         maquina.recargarCerveza(2000);
 
-        double resultado = maquina.servirCerveza(500, null);
+        double resultado = maquina.servirCerveza(500, 0);
 
         assertEquals(25.0, resultado, 0.001);
         assertEquals(1500.0, maquina.getCantidadActual(), 0.001);
@@ -32,7 +32,7 @@ public class testServirCervezaAI {
 
         maquina.recargarCerveza(1000);
 
-        double resultado = maquina.servirCerveza(1000, null);
+        double resultado = maquina.servirCerveza(1000, 0);
 
         assertEquals(40.0, resultado, 0.001);
         assertEquals(0.0, maquina.getCantidadActual(), 0.001);
@@ -47,7 +47,7 @@ public class testServirCervezaAI {
 
         maquina.recargarCerveza(500);
 
-        double resultado = maquina.servirCerveza(800, null);
+        double resultado = maquina.servirCerveza(800, 0);
 
         assertEquals(0.0, resultado, 0.001);
         assertEquals(500.0, maquina.getCantidadActual(), 0.001);
@@ -60,7 +60,7 @@ public class testServirCervezaAI {
 
         Maquina maquina = new Maquina("Club", "Cerveza", 0.04, 5000, "");
 
-        double resultado = maquina.servirCerveza(100, null);
+        double resultado = maquina.servirCerveza(100, 0);
 
         assertEquals(0.0, resultado, 0.001);
         assertEquals(0.0, maquina.getCantidadActual(), 0.001);
@@ -75,7 +75,7 @@ public class testServirCervezaAI {
 
         maquina.recargarCerveza(1000);
 
-        double resultado = maquina.servirCerveza(0, null);
+        double resultado = maquina.servirCerveza(0, 0);
 
         assertEquals(0.0, resultado, 0.001);
         assertEquals(1000.0, maquina.getCantidadActual(), 0.001);
@@ -90,7 +90,7 @@ public class testServirCervezaAI {
 
         maquina.recargarCerveza(2000);
 
-        double resultado = maquina.servirCerveza(400, null);
+        double resultado = maquina.servirCerveza(400, 0);
 
         assertEquals(12.0, resultado, 0.001);
         assertEquals(1600.0, maquina.getCantidadActual(), 0.001);

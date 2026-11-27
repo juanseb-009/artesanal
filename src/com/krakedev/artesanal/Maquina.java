@@ -99,7 +99,7 @@ public class Maquina {
 
 	}
 
-	public double servirCerveza(double cantidad, String codigo) {
+	public double servirCerveza(double cantidad, int codigo) {
 
 		if (cantidadActual >= cantidad) {
 			cantidadActual = cantidadActual - cantidad;
